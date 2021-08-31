@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import Counter from './Counter';
+import Headline from './Headline';
 import './App.css';
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
           JOE MAMA
         </p>
         <div>
-            <Counter />
+            <Headline value="JOE"/>
         </div>
       </header>
     </div>
