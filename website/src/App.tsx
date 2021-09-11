@@ -1,21 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
-import Counter from './Counter';
-import Headline from './Headline';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Home from "./Pages/Home"
 import './App.css';
 
-function App() {
+const App : React.FC = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          JOE MAMA
-        </p>
-        <div>
-            <Headline value="JOE"/>
-        </div>
-      </header>
+      <Router>
+        <Route exact path="/" component={Home}/>
+      </Router>
     </div>
   );
 }
